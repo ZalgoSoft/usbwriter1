@@ -1,0 +1,94 @@
+//#include <windows.h>
+//#include <commctrl.h>
+
+//CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "manifest.xml"
+
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_APP_ICON ICON "icon.ico"
+
+IDC_MAINDLG DIALOGEX 0, 0, 297, 161
+STYLE DS_CENTER | DS_SHELLFONT | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+CAPTION "USBWriter"
+BEGIN
+    PUSHBUTTON "&Browse...", IDC_MAINDLG_SELECT, 231, 18, 50, 14
+    GROUPBOX "&Target device", IDC_STATIC, 5, 50, 285, 35
+    COMBOBOX IDC_MAINDLG_TARGET_LIST, 14, 64, 208, 71, CBS_DROPDOWNLIST | WS_TABSTOP
+    PUSHBUTTON "&Refresh", IDC_MAINDLG_REFRESH, 231, 63, 50, 14
+    GROUPBOX "Progress", IDC_STATIC, 5, 95, 285, 35
+    CONTROL "", IDC_MAINDLG_PROGRESSBAR, "msctls_progress32", PBS_SMOOTH, 14, 109, 267, 12
+    PUSHBUTTON "&Write", IDC_MAINDLG_WRITE, 160, 140, 60, 14
+    PUSHBUTTON "&Close", IDC_MAINDLG_CLOSE, 230, 140, 60, 14
+    GROUPBOX "&Source file", IDC_STATIC, 5, 5, 285, 35
+    EDITTEXT IDC_MAINDLG_SOURCE, 14, 19, 208, 12, ES_AUTOHSCROLL
+END
+
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
